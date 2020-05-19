@@ -9,7 +9,8 @@ A simple template developed using: CSS3, HTML5 and the javascript.
     keyframes
    
 # Preview
-    <img src="https://cdn.loom.com/sessions/thumbnails/57d3fff308c44f38b464e1c0d450d78d-with-play.gif"/>
+
+<img src="https://cdn.loom.com/sessions/thumbnails/57d3fff308c44f38b464e1c0d450d78d-with-play.gif" width="350" />
 
 # Contact
 rodrigoaraujo990@gmail.com
