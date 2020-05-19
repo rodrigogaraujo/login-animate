@@ -8,8 +8,8 @@ A simple template developed using: CSS3, HTML5 and the javascript.
 # Libraries & Features
     keyframes
    
-# Gift
-    <a href="https://www.loom.com/share/57d3fff308c44f38b464e1c0d450d78d"> <p>18 May, 2020 - Loom Recording - Watch Video</p> <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/57d3fff308c44f38b464e1c0d450d78d-with-play.gif"> </a>
+# Preview
+    <img src="https://cdn.loom.com/sessions/thumbnails/57d3fff308c44f38b464e1c0d450d78d-with-play.gif"/>
 
 # Contact
 rodrigoaraujo990@gmail.com
