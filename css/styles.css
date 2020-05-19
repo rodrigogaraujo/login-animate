@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 80%;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #58af9b;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  left: 0%;
+  padding: 10px;
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-content .second-column {
+  z-index: 11;
+}
+
+.list-social-media {
+  display: flex;
+  list-style: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.form input {
+  height: 45px;
+  border: none;
+  background-color: #ecf0f1;
+  margin: 8px;
+  padding: 0 15px;
+  border-radius: 15px;
+}
+
+.form a {
+  margin-top: 5px;
+  text-decoration: none;
+  align-self: center;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.first-column {
+  text-align: center;
+  flex: 1 0 auto;
+  z-index: 10;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.primary {
+  color: #fff;
+}
+
+.second {
+  color: #58af9b;
+}
+
+.btn {
+  border-radius: 10px;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-primary {
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #58af9b;
+}
+
+.second-column {
+  flex: 2 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-secondary {
+  color: #58af9b;
+  border: 1px solid #58af9b;
+  width: 180px;
+  align-self: center;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #58af9b;
+  color: #fff;
+}
+
+.list-social-media li {
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  transition: all 0.5s;
+}
+
+.list-social-media a {
+  text-decoration: none;
+  color: #95a5a6;
+  transition: all 0.5s;
+}
+
+.list-social-media li a:hover {
+  color: #58af9b;
+}
+
+.list-social-media li:hover {
+  color: #58af9b;
+  border: 1px solid #58af9b;
+  cursor: pointer;
+}
+
+.description-second {
+  color: #7f8c8d;
+}
+
+.second-content {
+  position: absolute;
+  display: flex;
+}
+.second-content .first-column {
+  order: 2;
+  z-index: -1;
+}
+.second-content .second-column {
+  order: 1;
+  z-index: -1;
+}
+
+.sign-js .first-content .first-column,
+.sign-js .first-content .second-column {
+  z-index: -1;
+}
+
+.sign-js .second-content .second-column {
+  z-index: 11;
+}
+
+.sign-js .second-content .first-column {
+  z-index: 13;
+}
+
+.sign-js .content::before {
+  left: 60%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 12;
+  animation: slidein 0.3s;
+}
+
+.sign-up-js .first-content .first-column {
+  z-index: 13;
+}
+
+.sign-up-js .first-content .second-column {
+  z-index: 11;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+  z-index: -1;
+}
+
+.sign-up-js .content::before {
+  left: 0%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 12;
+  animation: slideout 0.3s;
+}
+
+@keyframes slidein {
+  from {
+    left: 0;
+    width: 40%;
+  }
+
+  25% {
+    left: 5%;
+    width: 50%;
+  }
+
+  50% {
+    left: 25%;
+    width: 60%;
+  }
+
+  75% {
+    left: 45%;
+    width: 50%;
+  }
+
+  to {
+    left: 60%;
+    width: 40%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    left: 60%;
+    width: 40%;
+  }
+
+  25% {
+    left: 45%;
+    width: 50%;
+  }
+
+  50% {
+    left: 25%;
+    width: 60%;
+  }
+
+  75% {
+    left: 5%;
+    width: 50%;
+  }
+
+  to {
+    left: 0;
+    width: 40%;
+  }
+}
